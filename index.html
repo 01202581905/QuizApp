@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/premium/png-512-thumb/quiz-1428698-1209568.png"
+        type="image/x-icon">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <main>
+        <div class="quizcontainer">
+            <div class="quizcontainer__content">
+                <div class="quizcontainer__content-log">
+                    <span id="current">1</span>/<span id="total">00</span>
+                </div>
+                <h1 class="quizcontainer__content-q" id="question">
+                    Questionnn
+                </h1>
+                <ul class="quizcontainer__content-a">
+                    <li>
+                        <input class="answer" type="radio" name="answer" id="a" />
+                        <label for="a" class="label_a">a</label>
+                    </li>
+                    <li>
+                        <input class="answer" type="radio" name="answer" id="b" />
+                        <label for="b" class="label_b">b</label>
+                    </li>
+                    <li>
+                        <input class="answer" type="radio" name="answer" id="c" />
+                        <label for="c" class="label_c">c</label>
+                    </li>
+                    <li>
+                        <input class="answer" type="radio" name="answer" id="d" />
+                        <label for="d" class="label_d">d</label>
+                    </li>
+                </ul>
+                <div class="quizcontainer__content-e" id="err">
+                    Please select your answer before submit !
+                </div>
+                <button id="submit" class="quizcontainer__content-s">Submit</button>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
