@@ -64,6 +64,7 @@ function animationText(elem, value, duration) {
         elem.innerText = value;
         elem.style.opacity = 1;
     }, duration);
+    //
 };
 
 submit.addEventListener('click', function(event){
