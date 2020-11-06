@@ -81,5 +81,76 @@ body main .quizcontainer__content-e {
 body main .quizcontainer__content .showerr {
   display: block;
 }
+body main .quizcontainer__modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(100, 100, 100, 0.8);
+}
+body main .quizcontainer__modal-result {
+  padding: 20px;
+  border-radius: 20px 0 20px 0;
+  background-color: #fff;
+  position: relative;
+  min-width: 600px;
+  min-height: 400px;
+}
+body main .quizcontainer__modal-result #close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.8s;
+  line-height: 16px;
+}
+body main .quizcontainer__modal-result #close:hover {
+  color: red;
+  transition: 0.6s;
+}
+body main .quizcontainer__modal-result h2 {
+  margin: 0;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 24px;
+}
+body main .quizcontainer__modal-result #listresult {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  counter-reset: li;
+}
+body main .quizcontainer__modal-result #listresult li {
+  display: flex;
+  align-items: flex-end;
+  counter-increment: li;
+}
+body main .quizcontainer__modal-result #listresult li::before {
+  content: counter(li);
+  display: inline-block;
+  min-width: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+body main .quizcontainer__modal-result #listresult li p {
+  text-transform: uppercase;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+body main .quizcontainer__modal-result #listresult li p img {
+  margin: 0 3px;
+  max-width: 20px;
+}
+body main .quizcontainer .show {
+  display: flex;
+}
 
 /*# sourceMappingURL=style.css.map */
